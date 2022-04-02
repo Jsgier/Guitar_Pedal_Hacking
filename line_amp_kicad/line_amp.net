@@ -1,0 +1,13 @@
+* C:\SOE\JG_Local\Projects\Guitar_Pedal_Hacking\line_amp_kicad\line_amp.asc
+V1 N001 0 SINE(0 300m 1k)
+R1 N002 N001 1Meg
+C1 N003 N002 {c_dcb}
+R2 +3.3 N003 {r1b}
+R3 N003 0 {r2b}
+V2 +3.3 0 3.3
+* Input: 0 - 300mV\nOutput: 0 - 3.3V\nFilter Cutoff Frequency: \nMax Source Impedance: 1MEG\n \nEngineer: J. Gier\nDate: 4/2/2022
+* Guitar Pickup
+.include line_amp.txt
+.tran 1
+.backanno
+.end

@@ -1,0 +1,3 @@
+.param c_dcb 1e-08
+.param r1b 10000.0
+.param r2b 10000.0

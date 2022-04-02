@@ -1,0 +1,12 @@
+#LTspice
+#ignore .log files
+.log
+
+#ignore .raw files
+.raw
+
+#ignore .net files
+.net
+
+#Other
+*.un~
