@@ -21,13 +21,16 @@ vin = 300E-3 #input voltage Vpk
 vout = 1.2 #desired output voltage Vpk
 
 #- Functions
+
 def R_parallel(r1,r2): return r1*r2 / (r1 + r2)
+def calc_r2(vs, vb, r1): return r1 / ((vs/vb)-1) #rs - source voltage, rb - divider output
 def wc(r1,r2,cdcb): return 1 / (2*np.pi * R_parallel(r1,r2) * cdcb)
 def calc_dcb(r1,r2,fc): return 1 / (2*np.pi * R_parallel(r1,r2) * fc)
 def calc_gain(rf,rg): return 1 + rf / rg
 def calc_rg(gain, rf): return rf / (gain - 1) 
 
 #- Calculations
+params['r2b'] = calc_r2(5, 1.65, params['r1b']) 
 params['c_dcb'] = calc_dcb(params['r1b'], params['r2b'], fc_hpf)
 params['rg'] = calc_rg(gain = vout / vin, rf = params['rf']) 
 

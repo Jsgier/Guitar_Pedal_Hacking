@@ -1,6 +1,6 @@
 .param rin 1.00e+07
-.param c_dcb 3.18e-07
+.param c_dcb 4.82e-07
 .param r1b 1.00e+04
-.param r2b 1.00e+04
+.param r2b 4.93e+03
 .param rf 1.00e+03
 .param rg 3.33e+02
