@@ -225,7 +225,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "unannotated": "error",
@@ -309,7 +309,7 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "\\\\smb.soeffects.com\\share\\jgier\\Infrastructure\\KiCad\\SOE_schematic_template.kicad_wks",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
@@ -320,7 +320,19 @@
     [
       "04887749-ccfb-4cae-aa67-99d42105b645",
       ""
+    ],
+    [
+      "86c9a117-d4e0-4b94-b683-c667aba115d1",
+      "amp"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "PCBA_ID": "",
+    "PCBA_NAME": "LINE PREAMPLIFIER",
+    "PCBA_PN": "203-677894-501",
+    "PCBA_PROJ": "Software Defined Guitar Pedal",
+    "PCBA_REV": "1",
+    "PCB_ENGINEER": "J. Gier",
+    "SHEETNAME": ""
+  }
 }
