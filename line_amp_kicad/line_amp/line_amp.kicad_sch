@@ -17,19 +17,47 @@
   )
 
 
-  (text "LINE PREAMPLIFIER _TOP\n" (at 199.39 31.75 180)
+  (text "_TOP\n" (at 274.32 26.67 180)
+    (effects (font (size 5 5) (thickness 1) bold) (justify right bottom))
+    (uuid 32e4c0fa-6c0a-4aa5-a3e0-fe373624e3d3)
+  )
+  (text "${SHEETNAME}\n" (at 245.11 21.59 180)
+    (effects (font (size 5 5) (thickness 1) bold) (justify right bottom))
+    (uuid 61225c41-7173-45dc-b2ac-2abb8d7ff55e)
+  )
+  (text "${SHEETNAME}\n" (at 254 21.59 180)
+    (effects (font (size 5 5) (thickness 1) bold) (justify right bottom))
+    (uuid 93913930-e7d9-48e3-99b0-b408d466fbc3)
+  )
+  (text "${SHEETNAME}" (at 199.39 31.75 180)
     (effects (font (size 5 5) (thickness 1) bold) (justify right bottom))
     (uuid cb3a2aa5-0f91-4478-9ddb-0b968ef5fa53)
   )
+  (text "${SHEETNAME}\n" (at 256.54 24.13 180)
+    (effects (font (size 5 5) (thickness 1) bold) (justify right bottom))
+    (uuid dda43d6d-5df8-4a14-9e19-e6cc8d90cd87)
+  )
 
-  (sheet (at 119.38 83.82) (size 59.69 30.48) (fields_autoplaced)
+  (sheet (at 127 63.5) (size 30.48 22.86) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 25f0dc4a-715b-4730-aa67-011162ff0e7d)
+    (property "Sheet name" "REGULATORS" (id 0) (at 127 62.7884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "regulators.kicad_sch" (id 1) (at 127 86.9446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 127 101.6) (size 30.48 24.13) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid 86c9a117-d4e0-4b94-b683-c667aba115d1)
-    (property "Sheet name" "amp" (id 0) (at 119.38 83.1084 0)
+    (property "Sheet name" "AMP" (id 0) (at 127 100.8884 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "amp.kicad_sch" (id 1) (at 119.38 114.8846 0)
+    (property "Sheet file" "amp.kicad_sch" (id 1) (at 127 126.3146 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
   )
@@ -37,5 +65,36 @@
   (sheet_instances
     (path "/" (page "1"))
     (path "/86c9a117-d4e0-4b94-b683-c667aba115d1" (page "2"))
+    (path "/25f0dc4a-715b-4730-aa67-011162ff0e7d" (page "3"))
+  )
+
+  (symbol_instances
+    (path "/86c9a117-d4e0-4b94-b683-c667aba115d1/236282df-5239-4053-8372-dfc1e6f9323e"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/86c9a117-d4e0-4b94-b683-c667aba115d1/9485359b-1ec0-4221-bb01-0106d929b9f5"
+      (reference "R?") (unit 1) (value "1k") (footprint "")
+    )
+    (path "/86c9a117-d4e0-4b94-b683-c667aba115d1/ce25f997-29d0-47f3-a82a-57acc64259d8"
+      (reference "R?") (unit 1) (value "330") (footprint "")
+    )
+    (path "/86c9a117-d4e0-4b94-b683-c667aba115d1/571dd08f-0ed8-4e76-bf91-f5a224ee71ce"
+      (reference "U?") (unit 1) (value "LM4562") (footprint "")
+    )
+    (path "/86c9a117-d4e0-4b94-b683-c667aba115d1/98ba5dd3-97ee-447f-8351-875c0606d759"
+      (reference "U?") (unit 1) (value "LM4562") (footprint "")
+    )
+    (path "/86c9a117-d4e0-4b94-b683-c667aba115d1/456ef4ab-d417-4be2-99a2-df71bc1589a7"
+      (reference "U?") (unit 2) (value "LM4562") (footprint "")
+    )
+    (path "/86c9a117-d4e0-4b94-b683-c667aba115d1/8ba55066-02f2-4e5d-a63f-6f191fc4623d"
+      (reference "U?") (unit 2) (value "LM4562") (footprint "")
+    )
+    (path "/86c9a117-d4e0-4b94-b683-c667aba115d1/3318370f-2f86-41bf-bca4-3acd1719ba46"
+      (reference "U?") (unit 3) (value "LM4562") (footprint "")
+    )
+    (path "/86c9a117-d4e0-4b94-b683-c667aba115d1/3b375248-509e-4399-a63e-ea73287fefea"
+      (reference "U?") (unit 3) (value "LM4562") (footprint "")
+    )
   )
 )

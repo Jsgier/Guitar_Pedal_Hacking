@@ -284,7 +284,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
-      "intersheets_ref_own_page": false,
+      "intersheets_ref_own_page": true,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
       "intersheets_ref_show": false,
@@ -323,7 +323,11 @@
     ],
     [
       "86c9a117-d4e0-4b94-b683-c667aba115d1",
-      "amp"
+      "AMP"
+    ],
+    [
+      "25f0dc4a-715b-4730-aa67-011162ff0e7d",
+      "REGULATORS"
     ]
   ],
   "text_variables": {
